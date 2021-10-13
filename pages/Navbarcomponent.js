@@ -41,7 +41,7 @@ export default function Navbarcomponent({ searchtitle, searchvalue }) {
 
                 <div id="o-header-search" className="o-header__row o-header__search o--if-no-js" role="search">
                     <div className="o-header__container">
-                        <form className="o-header__search-form" action="/search" role="search" aria-label="Site search">
+                        <form className="o-header__search-form" role="search" aria-label="Site search">
                             <label className="o-header__visually-hidden" htmlFor="o-header-search-term">Search the <abbr title="Financial Times">FT</abbr></label>
                             <input className="o-header__search-term"
                                 id="o-header-search-term"
@@ -51,8 +51,7 @@ export default function Navbarcomponent({ searchtitle, searchvalue }) {
                                 value={searchvalue}
                                 onChange={searchtitle} />
                             <button className="o-header__search-submit"
-                                onClick={searchtitle}
-                                type="submit">
+                                onClick={searchtitle}>
                                 Search
                             </button>
                         </form>
