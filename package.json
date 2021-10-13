@@ -18,6 +18,7 @@
     "eslint-config-next": "11.1.2"
   },
   "peerDependencies": {
-    "@financial-times/o-buttons": "^7.0.1"
+    "@financial-times/o-buttons": "^7.0.1",
+    "@financial-times/o-header": "^9.0.3"
   }
 }
