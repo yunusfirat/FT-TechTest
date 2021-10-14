@@ -86,7 +86,7 @@ export default function Home({ headlines }) {
       <>
       <section>
         <div className="o-grid-container">
-          <div className="o-grid-row " data-o-grid-colspan="center 3">
+          <div className="o-grid-row " data-o-grid-colspan="center 8">
             <div className="o-buttons-pagination">
               <a className="o-buttons o-buttons--secondary" aria-current={currentPage === 1 ? "page" : null} onClick={() => pagenitaion(1)}>1</a>
               <a className="o-buttons o-buttons--secondary" aria-current={currentPage === 2 ? "page" : null} onClick={() => pagenitaion(2)}>2</a>
@@ -108,7 +108,7 @@ export default function Home({ headlines }) {
               const { title, summary, location } = news
               return (
                 <>
-                <div key={index} data-o-grid-colspan="S12 M3  XL3" style={{ marginTop:"10px", width:"100%", height:"340px" }}>
+                <div key={index} data-o-grid-colspan="S12 M3  XL3" style={{ marginTop:"10px", width:"100%", height:"300px" }}>
                   <div className="demo-container demo-container--large">
                     <div className="o-teaser o-teaser--large" data-o-component="o-teaser">
                       <div className="o-teaser__content">
@@ -116,7 +116,7 @@ export default function Home({ headlines }) {
                           {title.title}
                         </h4>
                         <p className="o-teaser__standfirst">
-                          {summary.excerpt}
+                          {summary.excerpt.slice(0,200)}
                         </p>
                         <a href={location.uri} target="_blank" rel="noreferrer">View Details</a>
                       </div>
