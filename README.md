@@ -24,6 +24,5 @@ Origami component helps me to display similar component, typography and color li
 ● Perform well over 3G networks
 I used one of the latest technology to get highest performance it's working as expected.
 ● Work offline
-the project is working offline as well.
 ● validations and Error
 - I have also added error box if the user's search does not match with any headlines.

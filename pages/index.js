@@ -67,7 +67,7 @@ export default function Home({ headlines }) {
       SetCurrentPage(num);
     }
   }
-  console.log(filter)
+  
   return (
     <div className="container">
       
