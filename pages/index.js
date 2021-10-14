@@ -105,9 +105,10 @@ export default function Home({ headlines }) {
         <div className="o-grid-container">
           <div className="o-grid-row" data-o-grid-colspan="center 8">
             {filter.slice(prevpage, nextpage).map((news, index) => {
-              const { title, summary, lifecycle, location } = news
+              const { title, summary, location } = news
               return (
-                <div key={index} data-o-grid-colspan="S12 M3  XL3">
+                <>
+                <div key={index} data-o-grid-colspan="S12 M3  XL3" style={{ marginTop:"10px", width:"100%", height:"340px" }}>
                   <div className="demo-container demo-container--large">
                     <div className="o-teaser o-teaser--large" data-o-component="o-teaser">
                       <div className="o-teaser__content">
@@ -122,6 +123,7 @@ export default function Home({ headlines }) {
                     </div>
                   </div>
                 </div>
+                </>
               )
             })}
           </div>

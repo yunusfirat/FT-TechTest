@@ -4,7 +4,7 @@ export default function Errorcomponent() {
     return (
         <section>
         <div className="o-grid-container">
-          <div className="o-grid-row " data-o-grid-colspan="center 3">
+          <div className="o-grid-row " data-o-grid-colspan="center 3 S3">
             <div className="search-results__heading">
               <div className="search-results__heading-refine">
               </div>
